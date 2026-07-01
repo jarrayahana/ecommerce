@@ -1,5 +1,5 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { App } from './app';
+import App from './app';
 import { appRoutes } from './app.routes';
 import { provideRouter } from '@angular/router';
 import { By } from '@angular/platform-browser';

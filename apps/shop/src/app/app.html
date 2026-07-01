@@ -1,19 +1,12 @@
-<header class="app-header">
-  <div class="container">
-    <h1>{{ title }}</h1>
-    <nav>
-      <a routerLink="/products" routerLinkActive="active">Products</a>
-    </nav>
+<div class="flex flex-col min-h-screen">
+  <app-navbar></app-navbar>
+  <div class="container mx-auto py-7 grow h-full">
+    <div class="mx-5">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-</header>
+  <app-footer></app-footer>
+</div>
 
-<main class="app-main">
-  <router-outlet></router-outlet>
-</main>
 
-<footer class="app-footer">
-  <div class="container">
-    <p>© 2025 Nx Shop Demo - Showcasing Nx Monorepo Features</p>
-    <p>Frontend (Angular) + Backend (Express) + Shared Libraries</p>
-  </div>
-</footer>
+
